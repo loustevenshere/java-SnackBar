@@ -42,6 +42,11 @@ public class Customer
 		return cash + addedCash;
 	}
 
+	public void addCash(double cash)
+	{
+		this.cash += cash;
+	}
+
 	public double setUseCash(int quantity, double cost)
 	{
 		double totalCost = quantity * cost;

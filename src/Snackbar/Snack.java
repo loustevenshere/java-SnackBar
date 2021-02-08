@@ -72,19 +72,23 @@ public class Snack
 
 	// Any way to keep the state of quantity for when I do the following methods
 
-	public int setAddQuantity(int addQuantity)
-	{
-		return quantity + addQuantity;
+	// public int setAddQuantity(int addQuantity)
+	// {
+	// 	return quantity + addQuantity;
+	// }
+
+	public void addQuantity(int quantity) {
+		this.quantity += quantity;
 	}
 
-	public int setSubtractQuantity(int subtractQuantity)
-	{
-		return quantity - subtractQuantity;
-	}
+	public void subtractQuantity(int quantity) {
+    this.quantity -= quantity;
+}
 
-	public double getCost(int quantity)
+	public double getTotalCost(int quantity)
 	{
-		return cost * quantity;
+		double totalCost = this.cost * quantity;
+		return totalCost;
 	}
 
 
